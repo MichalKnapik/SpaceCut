@@ -1,0 +1,43 @@
+types:
+Vehicle, Car, Boat, Amphibia
+
+initial:
+(0, 0, 0, 0)
+
+final:
+(0, 0, 0, 1)
+
+transitions:
+
+name: makeVehicle
+
+input:
+(0, 0, 0, 0)
+
+output:
+(1, 0, 0, 0)
+
+name: makeCar
+
+input:
+(1, 0, 0, 0)
+
+output:
+(1, 1, 0, 0)
+
+name: makeBoat
+
+input:
+(1, 0, 0, 0)
+
+output:
+(1, 0, 1, 0)
+
+name: makeAmphibian
+
+input:
+(2, 1, 1, 0)
+
+output:
+(1, 1, 1, 1)
+    
