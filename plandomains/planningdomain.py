@@ -33,7 +33,7 @@ class simpleplanningdomain:
         return self.actNameToAction[actName]
 
     def moveToOrigin(self):
-        if self.initcopy == None:
+        if self.initcopy is None:
             self.initcopy = np.copy(self.initvec)
             self.initvec -= self.initcopy
             self.finalvec -= self.initcopy
@@ -43,7 +43,7 @@ class simpleplanningdomain:
             self.recomputevmax()
 
     def restoreOrigin(self):
-        if self.initcopy != None:
+        if self.initcopy is not None:
             self.initvec, self.initcopy = self.initcopy, None
             self.finalvec += self.initvec
 
