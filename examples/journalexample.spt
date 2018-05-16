@@ -1,0 +1,66 @@
+types:
+Body, Car, Boat, Plane, Amphibia, FloatP, JBVehicle
+
+initial:
+(0, 0, 0, 0)
+
+final:
+(0, 0, 0, 1)
+
+transitions:
+
+name: makeBody
+
+input:
+(0, 0, 0, 0, 0, 0, 0)
+
+output:
+(1, 0, 0, 0, 0, 0, 0)
+
+name: makeCar
+
+input:
+(1, 0, 0, 0, 0, 0, 0)
+
+output:
+(1, 1, 0, 0, 0, 0, 0)
+
+name: makeBoat
+
+input:
+(1, 0, 0, 0, 0, 0, 0)
+
+output:
+(1, 0, 1, 0, 0, 0, 0)
+
+name: makePlane
+
+input:
+(1, 0, 0, 0, 0, 0, 0)
+
+output:
+(1, 0, 0, 1, 0, 0, 0)
+
+name: makeAmph
+
+input:
+(2, 1, 1, 0, 0, 0, 0)
+
+output:
+(1, 1, 1, 0, 1, 0, 0)
+
+name: makeFloatP
+
+input:
+(2, 0, 1, 1, 0, 0, 0)
+
+output:
+(1, 0, 1, 1, 0, 1, 0)
+
+name: makeJBVehicle
+
+input:
+(0, 0, 0, 0, 1, 1, 0)
+
+output:
+(1, 1, 1, 1, 1, 1, 1)
